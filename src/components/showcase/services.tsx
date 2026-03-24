@@ -31,7 +31,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className=' w-full flex flex-col gap-4 items-center justify-center h-fit'>
+    <section className=' w-full flex flex-col gap-4 py-4 items-center justify-center h-fit'>
       <header className='w-full flex flex-col px-7 py-4 h-fit gap-4'>
         <h1 className='text-lg font-montserrat font-semibold text-center text-darkgray'>Serviços Que Elevam Sua Marca ao Próximo Nível</h1>
         <h2 className='text-xs font-montserrat text-darkgray/70 text-center'>Não entregamos materiais. Entregamos presença, impacto e percepção de valor.</h2>

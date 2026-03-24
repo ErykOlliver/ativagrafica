@@ -1,5 +1,6 @@
 import Hero from "../components/showcase/hero";
 import Services from "../components/showcase/services";
+import Testimonials from "../components/showcase/testimonials";
 import NavBar from "../components/UIKIT/navbar";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Services />
+      <Testimonials />
     </>
   );
 }
