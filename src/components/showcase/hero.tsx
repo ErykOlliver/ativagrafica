@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Hero() {
     return (
-        <section className='relative w-full px-7 flex flex-col gap-4 items-center justify-center pt-30 h-4/5'>
+        <section className='relative w-full px-7 flex flex-col gap-4 items-center justify-center pt-30 min-h-4/5'>
             <div className='w-full h-full absolute bg-black/80 -z-1 top-0'/>
             <video autoPlay loop muted playsInline className=' absolute -z-2 inset-0 h-full w-full object-cover'>
                 <source src='/homeclip.mp4' type="video/webm" />

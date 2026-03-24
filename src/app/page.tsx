@@ -1,4 +1,5 @@
 import Hero from "../components/showcase/hero";
+import Services from "../components/showcase/services";
 import NavBar from "../components/UIKIT/navbar";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <NavBar />
       <Hero />
+      <Services />
     </>
   );
 }

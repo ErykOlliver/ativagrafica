@@ -31,7 +31,7 @@ export default function NavBar() {
                         <nav className='w-full h-fit'>
                             <ul className='w-full h-fit flex flex-col gap-1.5'>
                                 {navigationOptions.map((n) => (
-                                    <li className='text-base text-white font-montserrat border-b border-white/10 py-2.5'>{n.label}</li>
+                                    <li key={n.label} className='text-base text-white font-montserrat border-b border-white/10 py-2.5'>{n.label}</li>
                                 ))}
                             </ul>
                         </nav>
