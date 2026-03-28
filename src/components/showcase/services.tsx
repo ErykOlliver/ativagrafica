@@ -31,12 +31,17 @@ const services = [
 
 export default function Services() {
   return (
-    <section className=' w-full flex flex-col gap-4 py-4 items-center justify-center h-fit'>
-      <header className='w-full flex flex-col px-7 py-4 h-fit gap-4'>
-        <h1 className='text-lg font-montserrat font-semibold text-center text-darkgray'>Serviços Que Elevam Sua Marca ao Próximo Nível</h1>
-        <h2 className='text-xs font-montserrat text-darkgray/70 text-center'>Não entregamos materiais. Entregamos presença, impacto e percepção de valor.</h2>
+    <section className='w-full flex flex-col gap-8 py-12 items-center justify-center h-fit bg-white'>
+      <header className='w-full max-w-4xl flex flex-col px-7 py-4 h-fit gap-2'>
+        <h1 className='text-lg md:text-3xl font-montserrat font-semibold text-center text-darkgray uppercase tracking-tighter'>
+          Serviços Que Elevam Sua Marca ao Próximo Nível
+        </h1>
+        <h2 className='text-xs md:text-sm font-montserrat text-darkgray/70 text-center'>
+          Não entregamos materiais. Entregamos presença, impacto e percepção de valor.
+        </h2>
       </header>
-      <article className='w-full flex flex-col gap-0 h-fit'>
+
+      <article className='w-full lg:max-w-7xl lg:px-7 grid grid-cols-1 lg:grid-cols-4 gap-0 lg:gap-4 h-fit'>
         {services.map((s, i) => (
           <ServiceCard
             key={i}
@@ -48,14 +53,19 @@ export default function Services() {
           />
         ))}
       </article>
-      <div className='flex px-7 flex-col items-center w-full h-fit justify-center gap-4'>
-        <p className='text-xs font-montserrat text-center'>
-          Sua marca já está no mercado. A pergunta é: <span className='text-greenaccent font-semibold'> ela está sendo percebida como deveria?</span>
-        </p>
-        <p className='text-base font-montserrat font-medium text-center'>
-          Quem investe em apresentação, conquista posicionamento.
-        </p>
-        <Link href="" className='text-white text-center shadow-[0_0_5px] shadow-green-500 bg-greenaccent p-4 border-l-2 w-full h-fit border-t-2 font-bold text-xs border-white rounded-full'>Eleve o Padrão da Sua Marca Agora</Link>
+
+      <div className='flex px-7 flex-col items-center w-full max-w-2xl h-fit justify-center gap-6 mt-4'>
+        <div className='text-center'>
+          <p className='text-xs font-montserrat'>
+            Sua marca já está no mercado. A pergunta é: <span className='text-greenaccent font-semibold'> ela está sendo percebida como deveria?</span>
+          </p>
+          <p className='text-base md:text-xl font-montserrat font-medium'>
+            Quem investe em apresentação, conquista posicionamento.
+          </p>
+        </div>
+        <Link href="" className='text-white text-center shadow-[0_0_15px_rgba(34,197,94,0.4)] bg-greenaccent p-4 border-l-2 w-full md:w-auto md:px-12 border-t-2 font-bold text-xs border-white rounded-full transition-transform hover:scale-105'>
+          Eleve o Padrão da Sua Marca Agora
+        </Link>
       </div>
     </section>
   )
