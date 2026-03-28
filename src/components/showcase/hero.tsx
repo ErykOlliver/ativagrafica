@@ -22,7 +22,7 @@ export default function Hero() {
                 <div className='flex flex-col items-center gap-4 mt-4'>
                     <Link
                         href={'#'}
-                        className='text-white shadow-[0_0_15px_rgba(34,197,94,0.4)] hover:shadow-green-500/60 bg-greenaccent px-8 py-4 border-l-2 border-t-2 font-bold text-sm md:text-base border-white rounded-full transition-all duration-300 hover:scale-105'
+                        className='text-white text-center shadow-[0_0_15px_rgba(34,197,94,0.4)] hover:shadow-green-500/60 bg-greenaccent px-8 py-4 border-l-2 border-t-2 font-bold text-sm md:text-base border-white rounded-full transition-all duration-300 hover:scale-105'
                     >
                         Quero Elevar o Nível da Minha Marca
                     </Link>

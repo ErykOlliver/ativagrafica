@@ -27,18 +27,17 @@ const testimonials = [
 
 export default function Testimonials() {
     return (
-        <section className='relative w-full flex flex-col py-16 md:py-20 px-7 gap-8 items-center justify-center min-h-fit overflow-hidden bg-zinc-950'>
-            <div className='absolute inset-0 bg-black/85 -z-1' />
-            <Image 
-                src={'/Bannerdepoiments.jpg'} 
-                alt='Banner Depoimentos' 
-                fill 
-                className='object-cover absolute -z-2 inset-0 opacity-30' 
+        <section className='relative w-full flex flex-col py-16 md:py-20 px-7 gap-8 items-center justify-center min-h-fit overflow-hidden bg-black/85'>
+            <Image
+                src={'/Bannerdepoiments.jpg'}
+                alt='Banner Depoimentos'
+                fill
+                className='object-cover absolute -z-2 inset-0 opacity-30'
             />
 
             <header className='w-full max-w-4xl flex flex-col gap-3 relative z-10'>
                 <h1 className='font-bold text-white font-montserrat text-lg md:text-3xl text-center uppercase tracking-tighter'>
-                    Empresas que confiaram. <br className='md:hidden'/> Resultados que confirmam.
+                    Empresas que confiaram. <br className='md:hidden' /> Resultados que confirmam.
                 </h1>
                 <h2 className='font-medium text-whitegray font-montserrat text-[10px] md:text-sm text-center max-w-xl mx-auto'>
                     A confiança não se constrói com promessas. Se constrói com entrega consistente e qualidade comprovada.
@@ -56,7 +55,7 @@ export default function Testimonials() {
                     touchRatio={1.5}
                     navigation={true}
                     breakpoints={{
-                        1024: { 
+                        1024: {
                             slidesPerView: 2.2,
                             spaceBetween: 40,
                             coverflowEffect: {
@@ -83,6 +82,12 @@ export default function Testimonials() {
                     ))}
                 </Swiper>
             </article>
+            <div className='flex flex-col w-full gap-4 h-fit items-center'>
+                <p className='text-center text-whitegray font-montserrat text-base'>Se essas empresas confiaram, sua marca também pode evoluir com a Ativa.</p>
+                <Link href="" className='text-white text-center shadow-[0_0_15px_rgba(34,197,94,0.4)] bg-greenaccent p-4 border-l-2 w-full md:w-auto md:px-12 border-t-2 font-bold text-xs border-white rounded-full transition-transform hover:scale-105'>
+                Começar meu projeto
+                </Link>
+            </div>
 
         </section>
     )

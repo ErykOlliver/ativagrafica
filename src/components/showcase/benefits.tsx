@@ -10,23 +10,39 @@ const benefits = [
     { icon: <LuUsersRound className='size-6' />, title: 'Equipe Especializada', description: 'Atenção minuciosa em cada acabamento, cada cor e cada aplicação.' },
 
 ]
-
 export default function Benefits() {
     return (
-        <section className='w-full relative flex bg-black py-4 px-7 flex-col gap-4 items-center justify-center h-fit'>
-            <header className='w-full h-fit flex flex-col gap-4 items-center justify-center'>
-                <h1 className='font-montserrat font-semibold text-center text-white text-lg'>POR QUE ESCOLHER A GRÁFICA ATIVA?</h1>
-                <h2 className='font-montserrat text-xs text-center text-whitegray'>Excelência não é detalhe. <span className='font-semibold text-white'> É padrão.</span></h2>
+        <section className='w-full relative flex bg-black py-16 lg:py-24 px-7 flex-col gap-12 items-center justify-center h-fit'>
+            
+            <header className='w-full max-w-4xl h-fit flex flex-col gap-4 items-center justify-center relative z-10'>
+                <h1 className='font-montserrat font-bold text-center text-white text-xl md:text-3xl lg:text-4xl uppercase tracking-tighter'>
+                    POR QUE ESCOLHER A GRÁFICA ATIVA?
+                </h1>
+                <h2 className='font-montserrat text-xs md:text-sm lg:text-base text-center text-whitegray uppercase tracking-widest'>
+                    Excelência não é detalhe. <span className='font-semibold text-white'> É padrão.</span>
+                </h2>
             </header>
-            <article className='w-full gap-2 h-fit grid grid-cols-2 items-center justify-center'>
+
+            <article className='w-full max-w-7xl gap-4 md:gap-6 h-fit grid grid-cols-2 lg:grid-cols-4 items-stretch justify-center relative z-10'>
                 {benefits.map((b, i) => (
                     <BenefitCard key={i} title={b.title} description={b.description} icon={b.icon} />
                 ))}
             </article>
-            <div className='flex flex-col items-center justify-center gap-4'>
-                <p className='text-center text-whitegray font-montserrat text-xs'>Escolher uma gráfica é escolher como sua marca será percebida. Aqui, cada projeto é tratado como prioridade.</p>
+
+            <div className='flex flex-col items-center justify-center gap-8 max-w-2xl relative z-10'>
+                <p className='text-center text-whitegray font-montserrat text-xs md:text-sm leading-relaxed'>
+                    Escolher uma gráfica é escolher como sua marca será percebida. <br className='hidden md:block'/> Aqui, cada projeto é tratado como prioridade máxima.
+                </p>
+                
+                <Link 
+                    href="" 
+                    className='text-white text-center shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-green-500/50 bg-greenaccent px-10 py-4 border-l-2 w-full md:w-auto border-t-2 font-bold text-xs md:text-sm border-white rounded-full transition-all hover:scale-105 active:scale-95'
+                >
+                    Fale Conosco Agora
+                </Link>
             </div>
-            <Link href="" className='text-white text-center shadow-[0_0_5px] shadow-green-500 bg-greenaccent p-4 border-l-2 w-full border-t-2 font-bold text-xs border-white rounded-full'>Fale conosco Agora</Link>
+
+            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-greenaccent/5 blur-[120px] rounded-full pointer-events-none' />
         </section>
     )
 }

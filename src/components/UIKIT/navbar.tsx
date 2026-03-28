@@ -18,7 +18,7 @@ export default function NavBar() {
 
     return (
         <>
-            <header className='w-full h-fit fixed top-0 z-100 backdrop-blur-md bg-black/20 border-b-[0.5px] border-white/30 px-7 md:px-14 flex justify-between items-center pb-3.5 pt-8 transition-all'>
+            <header className='w-full h-fit fixed top-0 z-100 backdrop-blur-md bg-black/20 border-b-[0.5px] border-white/30 px-7 md:px-14 flex justify-between items-center pb-3.5 pt-8 transition-all pointer-events-auto'>
                 
                 <Image 
                     src={'/logomark.svg'} 
@@ -51,7 +51,7 @@ export default function NavBar() {
 
                 <LuMenu
                     onClick={() => setExpandMenu(true)} 
-                    className='text-white size-8 md:hidden cursor-pointer' 
+                    className='text-white size-8 md:hidden cursor-pointer pointer-events-auto' 
                 />
             </header>
 
