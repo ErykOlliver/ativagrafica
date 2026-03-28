@@ -61,9 +61,9 @@ export default function Testimonials() {
                     ))}
                 </Swiper>
             </article>
-            <div className='flex flex-col w-full gap-4 px-7 h-fit '>
+            <div className='flex flex-col w-full gap-4 h-fit '>
                 <p className='text-center text-whitegray font-montserrat text-base'>Se essas empresas confiaram, sua marca também pode evoluir com a Ativa.</p>
-                <Link href="" className='text-white text-center shadow-[0_0_5px] shadow-green-500 bg-greenaccent p-4 border-l-2  border-t-2 font-bold text-xs border-white rounded-full'>Começar meu projeto</Link>
+                <Link href="" className='text-white text-center shadow-[0_0_5px] shadow-green-500 bg-greenaccent p-4 border-l-2 w-full border-t-2 font-bold text-xs border-white rounded-full'>Começar meu projeto</Link>
             </div>
         </section>
     )

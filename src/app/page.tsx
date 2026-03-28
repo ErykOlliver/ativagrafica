@@ -1,3 +1,4 @@
+import Benefits from "../components/showcase/benefits";
 import Hero from "../components/showcase/hero";
 import Services from "../components/showcase/services";
 import Testimonials from "../components/showcase/testimonials";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Testimonials />
+      <Benefits/>
     </>
   );
 }
